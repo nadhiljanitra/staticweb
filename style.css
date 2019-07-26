@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#headerSBO{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #ffff;
+    padding: 1%;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+#logo{
+    padding: 10px;
+}
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 140vh;
+    position: relative;
+    top: 60px;
+}
