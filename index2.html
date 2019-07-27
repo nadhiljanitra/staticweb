@@ -3,6 +3,7 @@
     <head>
         <title>SBO</title>
         <link type="text/css" rel="stylesheet" href="style.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -12,7 +13,7 @@
                 <nav>
                     <ul>
                         <li><a href=#aboutText>About Us</a></li>
-                        <li><a href=#faq>FAQ</a></li>
+                        <li><a href=./index.html #faq>FAQ</a></li>
                         <li>Social Media</li>
                     </ul>
                 </nav>
@@ -20,17 +21,16 @@
         <section class="index">
             <h1>Jenis-jenis barang yang dapat di sewa</h1>
             <ul>
-                <li>Tenda</li>
-                <li>Sleeping Bag</li>
-                <li>Matras</li>
-                <li>Sepatu</li>
-                <li>Hammocks</li>
+                <li><a href=#tent>Tenda</a></li>
+                <li><a href=#sb>Sleeping Bag</a></li>
+                <li><a href=#hammocks>Hammocks</a></li>
+                <li><a href=#lantern>Lantern</a></li>
             </ul>
         </section>
         <section class="stuff">
-            <section class="tent">
+            <section id="tent">
                 <h1>Tent</h1>
-                <div id="tent1">
+                <div class="container">
                     <div id="tent11">
                         <div>
                             <img id="mainimg" src="/img/10419362x1013039_vAlt_image_2_540x540.webp" >
@@ -40,26 +40,281 @@
                             <img class="smallimg"src="/img/10419362x1013039_vAlt_image_4_540x540.webp">
                             <img class="smallimg"src="/img/10419362x1013039_vAlt_image_5_540x540.webp">
                         </div>
+                        <h3>Description: </h3>
+                        <h4>MSR Hubba Hubba NX 2 Person Tent</h4>
+                        <h5>$40 / day</h5>
+                        <p>
+                            - Capacity for 2 person<br>
+                            - Weight : 3lbs 7oz<br>
+                            - Dimensions of Floor : 84 x 50 inches<br> 
+                        </p>
+                        <form id="submit" method="POST">
+                            <label for="jumlah">Amount: </label>
+                            <input type="number" min="0" value="0" id="jumlah" name="tent1">
+                            <input type="submit" value="Rent It">
+                        </form>
                     </div>
                     <div id="tent12">
-                            <div>
-                                    <img id="mainimg" src="/img/10301440x1120916_zm_540x540.webp" >
-                                </div>
-                                <div id="small">
-                                    <img class="smallimg"src="/img/10301440x1184968_vDetail_1_540x540.webp">
-                                    <img class="smallimg"src="/img/Marmot_Limelight_3_540x540.webp">
-                                    <img class="smallimg"src="/img/10301440x1120916_zm_540x540.webp">
-                                </div>
+                        <div>
+                            <img id="mainimg" src="/img/10301440x1120916_zm_540x540.webp" >
+                        </div>
+                        <div id="small">
+                            <img class="smallimg"src="/img/10301440x1184968_vDetail_1_540x540.webp">
+                            <img class="smallimg"src="/img/Marmot_Limelight_3_540x540.webp">
+                            <img class="smallimg"src="/img/10301440x1120916_zm_540x540.webp">
+                        </div>
+                        <h3>Description: </h3>
+                        <h4>Marmot Limelight 3-Person Tent</h4>
+                        <h5>$45 / day</h5>                        
+                        <p>
+                            - Capacity for 3 person<br>
+                            - Weight : 6lbs 0.5oz<br>
+                            - Area of Floor : 42 square feet<br> 
+                        </p>
+                        <form id="submit" method="POST">
+                                <label for="jumlah">Amount: </label>
+                                <input type="number" min="0" value="0" id="jumlah" name="tent2">
+                                <input type="submit" value="Rent It">
+                            </form>
                     </div>
-                    <div id="tent13">Tenda3</div>
-                </div>
-                <div id="tent1">
-                    <div id="tent21">Tenda4</div>
-                    <div id="tent22">Tenda5</div>
-                    <div id="tent23">Tenda6</div>
+                    <div id="tent13">
+                        <div>
+                            <img id="mainimg" src="/img/29100_9821_f_540x540.webp" >
+                        </div>
+                        <div id="small">
+                            <img class="smallimg"src="/img/29100_9821_alt2_540x540.webp">
+                            <img class="smallimg"src="/img/29100_9821_alt4_540x540.webp">
+                            <img class="smallimg"src="/img/136399344_540x540.webp">
+                        </div>
+                        <h3>Description: </h3>
+                        <h4>Marmot Limelight 4-Person Tent</h4>
+                        <h5>$59 / day</h5>                        
+                        <p>
+                            - Capacity for 4 person<br>
+                            - Weight : 10lbs 10oz<br>
+                            - Area of Floor : 60 square feet<br> 
+                        </p>
+                        <form id="submit" method="POST">
+                                <label for="jumlah">Amount: </label>
+                                <input type="number" min="0" value="0" id="jumlah" name="tent3">
+                                <input type="submit" value="Rent It">
+                            </form>
+                    </div>
                 </div>
             </section>
+            <section id="sb">
+                <h1>Sleeping Bag</h1>
+                <div class="container">
+                    <div id="tent11">
+                        <div>
+                            <img id="mainimg" src="/img/marmot-ultra-elite-30-long-sleeping-bag-31_png_540x540.webp" >
+                        </div>
+                        <div id="small">
+                            <img class="smallimg"src="/img/marmot-ultra-elite-30-long-sleeping-bag-7_png_540x540.webp">
+                            <img class="smallimg"src="/img/marmot-ultra-elite-30-long-sleeping-bag-5_png_540x540.webp">
+                        </div>
+                        <h3>Description: </h3>
+                        <h4>Marmot Ultra Elite Trestles 30 Sleeping Bag</h4>
+                        <h5>$25 / day</h5>
+                        <p>
+                                - Bag Temperature: 28&#176 F<br>
+                                - Weight : 2lbs<br>
+                                - Max Length : 78 inches<br> 
+                        </p>  
+                        <form id="submit" method="POST">
+                            <label for="jumlah">Amount: </label>
+                            <input type="number" min="0" value="0" id="jumlah">
+                            <input type="submit" value="Rent It">
+                        </form>
+                    </div>
+                    <div id="tent12">
+                        <div>
+                            <img id="mainimg" src="/img/11_60cea5a0-0f7a-4be8-9876-f1a7eb19ece7_540x540.webp" >
+                        </div>
+                        <div id="small">
+                            <img class="smallimg"src="/img/11_60cea5a0-0f7a-4be8-9876-f1a7eb19ece7_540x540.webp">
+                            <p></p>
+                        </div>
+                        <h3>Description: </h3>
+                        <h4>Nemo Forte 35 Sleeping Bag</h4>
+                        <h5>$25 / day</h5>
+                        <p>
+                                - Bag Temperature: 35&#176 F<br>
+                                - Weight : 2lbs 7oz<br>
+                                - Max Length : 72 inches<br> 
+                        </p>
+                        <form id="submit" method="POST">
+                                <label for="jumlah">Amount: </label>
+                                <input type="number" min="0" value="0" id="jumlah">
+                                <input type="submit" value="Rent It">
+                            </form>
+                    </div>
+                    <div id="tent13">
+                        <div>
+                            <img id="mainimg" src="/img/elite_20_540x540.webp" >
+                        </div>
+                        <div id="small">
+                            <img class="smallimg"src="/img/elite_20_540x540.webp">
+                        </div>
+                        <h3>Description: </h3>
+                        <h4>Marmot Trestles Elite 20 Degree </h4>
+                        <h5>$25 / day</h5>
+                        <p>
+                                - Bag Temperature: 21.6&#176 F<br>
+                                - Weight : 2lbs 6oz<br>
+                                - Max Length : 72 inches<br> 
+                        </p> 
+                        <form id="submit" method="POST">
+                                <label for="jumlah">Amount: </label>
+                                <input type="number" min="0" value="0" id="jumlah">
+                                <input type="submit" value="Rent It">
+                            </form>
+                    </div>
+                </div>
+            </section>
+            <section id="hammocks">
+                    <h1>Hammocks</h1>
+                    <div class="container">
+                        <div id="tent11">
+                            <div>
+                                <img id="mainimg" src="/img/Eno_6_540x540.webp" >
+                            </div>
+                            <div id="small">
+                                <img class="smallimg"src="/img/Eno_6_540x540.webp">
+                            </div>
+                            <h3>Description: </h3>
+                            <h4>ENO SingleNest 1-Person Hammock</h4>
+                            <h5>$12 / day</h5>
+                            <p>
+                                    - Sleeping Capacity: 1 Person<br>
+                                    - Weight Capacity: 400lbs<br>
+                                    - Unfolded Dimensions : 112" x 55"<br> 
+                            </p>  
+                            <form id="submit" method="POST">
+                                <label for="jumlah">Amount: </label>
+                                <input type="number" min="0" value="0" id="jumlah">
+                                <input type="submit" value="Rent It">
+                            </form>
+                        </div>
+                        <div id="tent12">
+                            <div>
+                                <img id="mainimg" src="/img/hammock_afb2066d-294a-4147-8711-d3d4e8d7fbb3_540x540.webp" >
+                            </div>
+                            <div id="small">
+                                <img class="smallimg"src="/img/hammock_afb2066d-294a-4147-8711-d3d4e8d7fbb3_540x540.webp">
+                                <p></p>
+                            </div>
+                            <h3>Description: </h3>
+                            <h4>ENO Doublenest Hammock</h4>
+                            <h5>$7 / day</h5>
+                            <p>
+                                    - Sleeping Capacity: 2 Person<br>
+                                    - Weight Capacity: 400lbs<br>
+                                    - Unfolded Dimensions : 112" x 74"<br>  
+                            </p>
+                            <form id="submit" method="POST">
+                                    <label for="jumlah">Amount: </label>
+                                    <input type="number" min="0" value="0" id="jumlah">
+                                    <input type="submit" value="Rent It">
+                                </form>
+                        </div>
+                        <div id="tent13">
+                            <div>
+                                <img id="mainimg" src="/img/061755f6-0da7-48d9-8096-ac8268e26d19_540x540.webp" >
+                            </div>
+                            <div id="small">
+                                <img class="smallimg"src="/img/061755f6-0da7-48d9-8096-ac8268e26d19_540x540.webp">
+                            </div>
+                            <h3>Description: </h3>
+                            <h4>ENO JungleNest Hammock</h4>
+                            <h5>$15 / day</h5>
+                            <p>
+                                    - Sleeping Capacity: 1 Person<br>
+                                    - Weight Capacity: 400lbs<br>
+                                    - Unfolded Dimensions : 112" x 57"<br>  
+                            </p>
+                            <form id="submit" method="POST">
+                                    <label for="jumlah">Amount: </label>
+                                    <input type="number" min="0" value="0" id="jumlah">
+                                    <input type="submit" value="Rent It">
+                                </form>
+                        </div>
+                    </div>
+            </section>
+            <section id="lantern">
+                    <h1>Lantern</h1>
+                    <div class="container">
+                        <div id="tent11">
+                            <div>
+                                <img id="mainimg" src="/img/image_540x540.jpg" >
+                            </div>
+                            <div id="small">
+                                <img class="smallimg"src="/img/620716_FRPH_Apollo_Grey_540x540.jpg">
+                            </div>
+                            <h3>Description: </h3>
+                            <h4>Black Diamond Apollo Lantern</h4>
+                            <h5>$9 / day</h5>
+                            <p>
+                                    - Average Run Time: 50 hours<br>
+                                    - Batteries: 4 AA<br>
+                                    - Max Light Output : 250 lumens<br> 
+                            </p>  
+                            <form id="submit" method="POST">
+                                <label for="jumlah">Amount: </label>
+                                <input type="number" min="0" value="0" id="jumlah">
+                                <input type="submit" value="Rent It">
+                            </form>
+                        </div>
+                        <div id="tent12">
+                            <div>
+                                <img id="mainimg" src="/img/Black_diamond_moji_540x540.jpg" >
+                            </div>
+                            <div id="small">
+                                <img class="smallimg"src="/img/Moji_1_540x540.jpg">
+                                <p></p>
+                            </div>
+                            <h3>Description: </h3>
+                            <h4>Black Diamond Moji Lantern</h4>
+                            <h5>$3 / day</h5>
+                            <p>
+                                    - Average Run Time: 70 hours<br>
+                                    - Batteries: 3 AAA<br>
+                                    - Max Light Output : 100 lumens<br> 
+                            </p>
+                            <form id="submit" method="POST">
+                                    <label for="jumlah">Amount: </label>
+                                    <input type="number" min="0" value="0" id="jumlah">
+                                    <input type="submit" value="Rent It">
+                                </form>
+                        </div>
+                        <div id="tent13">
+                            <div>
+                                <img id="mainimg" src="/img/61l5Z0uhEgL._SL1500_540x540.jpg" >
+                            </div>
+                            <div id="small">
+                                <img class="smallimg"src="/img/71HHjmaU2gL._SL1500_540x540.jpg">
+                                <img class="smallimg"src="/img/71ouoBfy-QL._SL1500_540x540.jpg">
+                            </div>
+                            <h3>Description: </h3>
+                            <h4>Goal Zero Crush Light Lantern</h4>
+                            <h5>$3 / day</h5>
+                            <p>
+                                    - Average Run Time: 35 hours<br>
+                                    - Rechargeability: Rechargeable<br>
+                                    - Max Light Output : 60 lumens<br> 
+                            </p>
+                            <form id="submit" method="POST">
+                                    <label for="jumlah">Amount: </label>
+                                    <input type="number" min="0" value="0" id="jumlah">
+                                    <input type="submit" value="Rent It">
+                                </form>
+                        </div>
+                    </div>
+            </section>
         </section>
+        <footer>
+                <p>&#169 2019 Mohamad Nadhil Janitra</p>
+        </footer>
     </body>
     
 </html>
