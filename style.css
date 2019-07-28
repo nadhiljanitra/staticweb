@@ -13,7 +13,6 @@ header{
     width: 100%;
     z-index: 2;
 }
-
 ul{
     display: flex;
     flex-direction: row;
@@ -43,7 +42,8 @@ ul{
     top: 50%;
     left: 10%;
    /* background-color:rgba(251,255,201,0.6); */
-    border-radius: 8px
+    border-radius: 8px;
+    line-height:1.6;
 
 }
 #welcome h1{
@@ -59,6 +59,9 @@ ul{
     color: white;
     margin-top: 10px; 
     border: solid 1px;
+    padding: 3px;
+    border-radius: 8px;
+    background-color: rgba(219,219,219,0.3);
 }
 
 /*CSS UNTUK HOWTO */
@@ -77,6 +80,7 @@ ul{
 .step{
     display:flex;
     flex-direction: row;
+    align-content: space-around;
 }
 #s1 h1,
 #s2 h1,
@@ -87,7 +91,7 @@ ul{
 #s1, #s2, #s3 {
     box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
     background-color: rgba(219,219,219,0.3);
-    margin: 0 10px;
+    margin: 0 25px;
     padding: 0, 10px;
 }
 
@@ -120,6 +124,7 @@ ul{
     align-items: center;
     justify-content: center;
     align-content: center;
+    padding:30px;
 }
 #aboutText p{
     margin: 0 20px;
@@ -208,9 +213,7 @@ footer p{
     justify-content: space-evenly;
     margin-top: 10px;
 }
-#jumlah{
-    width: 40px;
-}
+
 #submit{
     text-align: center;
 }
@@ -231,7 +234,7 @@ footer p{
 #hammocks{
     display:grid;
     grid-template-rows: 1fr 6fr;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 #hammocks h1{
     text-align: center;
@@ -244,7 +247,7 @@ footer p{
 #lantern{
     display:grid;
     grid-template-rows: 1fr 6fr;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 #lantern h1{
     text-align: center;
@@ -252,4 +255,39 @@ footer p{
     font-family: 'Roboto', sans-serif;
     font-size: 50px;
     margin-bottom: 30px;
+}
+input[type="number"]{
+    width: 40px;
+}
+a:link{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+.detail{
+    width:80%;
+    margin:auto;
+    border: 1px solid;
+    position: relative;
+    top:70px;
+    background-color: #ccc7c7;
+}
+.detail h1{
+    color: white;
+    text-align: center;
+}
+.detail input[type="text"]{
+    background-color: #ccc7c7;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ffff;
+    box-sizing: border-box;
+    width: 300px;
+}
+#bawah{
+    position: relative;
+    top:76vh;
 }
