@@ -2,18 +2,20 @@
     margin: 0;
     padding: 0;
 }
+
 /* CSS UUNTUK HEADER */
 header{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 5fr 3fr;
     background-color: #ffff;
     padding: 10px;
     box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
     position: fixed;
+    opacity: 1;
     width: 100%;
     z-index: 2;
 }
-ul{
+header ul{
     display: flex;
     flex-direction: row;
     padding: 10px;
@@ -21,14 +23,16 @@ ul{
     list-style-type: none;
     align-items: center;
     font-family: Helvetica, sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     text-decoration: none;
 }
 #logo{
     padding: 10px;
     align-items: center;
-    font-family: sans-serif;
-    font-weight: 600;
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 25px;
+    margin: 0 0 0 50px;
 }
 
 /* CSS UNTUK BANNER */
@@ -39,29 +43,37 @@ ul{
 }
 #welcome{
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 10%;
    /* background-color:rgba(251,255,201,0.6); */
     border-radius: 8px;
-    line-height:1.6;
+    line-height: 1.5;
 
 }
 #welcome h1{
-    font-size: 50px;
+    font-size: 70px;
+    font-family: cursive;
     color: white;
+    position: relative;
+    top: 20px;
 }
 #welcome p{
     font-size: 20px;
     color: white;
+    font-family:'Roboto', sans-serif;
+  
 }
 #welcome a{
-    font-size: 20px;
+    font-size: 25px;
     color: white;
     margin-top: 10px; 
-    border: solid 1px;
-    padding: 3px;
-    border-radius: 8px;
-    background-color: rgba(219,219,219,0.3);
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(255, 136, 0, 0.726);
+    font-family:'Roboto', sans-serif;
+    position: relative;
+    top: 10px;
+    font-weight: 700;
 }
 
 /*CSS UNTUK HOWTO */
@@ -72,27 +84,35 @@ ul{
     width: 80%;
     margin: auto;
 }
-.howto h1{
-    font-family: Helvetica, sans-serif;
+.howto #htr{
+    font-family: 'Roboto', sans-serif;
     font-weight: 800;
-    margin: 10px;
+    font-size: 50px;
+    margin: 50px;
 }
 .step{
     display:flex;
     flex-direction: row;
     align-content: space-around;
+    font-family: 'Roboto', sans-serif;
 }
 #s1 h1,
 #s2 h1,
 #s3 h1{
-    font-weight: 500;
+    font-weight: 700;
+    margin: 10px;
 }
-
+#s1 h2,
+#s2 h2,
+#s3 h2{
+    font-weight: 300;
+    margin: 10px;
+}
 #s1, #s2, #s3 {
     box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
-    background-color: rgba(219,219,219,0.3);
-    margin: 0 25px;
-    padding: 0, 10px;
+    background-color: rgba(207, 207, 207, 0.705);
+    margin: 10px 30px;
+    padding: 10px 20px;
 }
 
 #s1 p{
@@ -111,11 +131,11 @@ ul{
     grid-template-columns: 1fr 1fr;
     /*position: relative;
     top: 80px;*/
-    margin: 10px 0;
     width: 80%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 50px;
     background-color: #dbdbdb;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
 }
 #aboutText{
     display: flex;
@@ -125,9 +145,19 @@ ul{
     justify-content: center;
     align-content: center;
     padding:30px;
+    line-height: 1.7;
 }
-#aboutText p{
+#aboutText h1{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+#aboutText h3{
     margin: 0 20px;
+    font-size: 20px;
+}
+#aboutText h5{
+    margin: 5px 20px;
+    font-size: 15px;
 }
 hr{
     border: solid 2px black;
@@ -139,15 +169,19 @@ hr{
 #faq{
    display: grid;
    grid-template-columns: 1fr 1fr;
-    width:80%;
-   margin: 10px auto;
+   width:80%;
+   margin: 50px auto;
    background-color: #dbdbdb;
+   box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
 }
 #faq h1{
-    padding: 10px;  
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;  
 }
 #faqtext{
     padding:10px;
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* CSS UNTUK FOOTER */
@@ -172,9 +206,33 @@ footer p{
     font-family: 'Roboto', sans-serif;
     margin: 20px 0;
 }
+#things{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    margin: 50px;
+}
+.index ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Helvetica, sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.index li{
+    background-color: #cacaca;
+    margin: 10px 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
 .stuff{
     width: 80%;
     margin:auto;
+    background-color: #cacaca;
 }
 /* CSS UNTUK TENT */
 #tent{
@@ -270,24 +328,51 @@ a:visited{
 .detail{
     width:80%;
     margin:auto;
-    border: 1px solid;
     position: relative;
     top:70px;
-    background-color: #ccc7c7;
+    background-color: #8e8e8e;
+    border-radius: 10px;
+    padding: 20px;
 }
 .detail h1{
     color: white;
     text-align: center;
 }
-.detail input[type="text"]{
-    background-color: #ccc7c7;
+.detail form{
+    color: white;
+    text-align: left;
+    margin: 0 50px;;
+    line-height: 1.6;
+    
+}
+.detail input{
+    background-color: #8e8e8e;
     outline: none;
     border: none;
     border-bottom: 1px solid #ffff;
     box-sizing: border-box;
-    width: 300px;
+    width: 100%;
+    color: white;
+    padding: 5px 10px;
+}
+.detail input[type="submit"]{
+    border: 1px solid;
+    width: 100px;
+    margin-top: 50px;
+}
+
+.detail input[id="city"],
+.detail input[id="state"],
+.detail input[id="country"],
+.detail input[id="date"],
+.detail input[id="until"]{
+    width: 150px;
+}
+#location{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr; 
 }
 #bawah{
     position: relative;
-    top:76vh;
+    top:47vh;
 }
